@@ -5,26 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services - OMA Ottawa Makeup Artist</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Ensure you link Bootstrap if you're using its components -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <!-- Navigation Bar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="Home.html">OMA Ottawa Makeup Artist</a>
+                <a class="navbar-brand" href="home.html">OMA Ottawa Makeup Artist</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="Home.html">Home</a>
+                            <a class="nav-link" href="home.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="Services.html">Services</a>
+                            <a class="nav-link active" href="services.html">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Booking.html">Book Appointment</a>
+                            <a class="nav-link" href="booking.html">Book Appointment</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Contact.html">Contact</a>
+                            <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -33,19 +37,19 @@
     </header>
 
     <main>
-        <h2>Our Services</h2>
-        <div>
-            <h3>Natural Makeup</h3>
+        <h1>Our Services</h1>
+        <section>
+            <h2>Natural Makeup</h2>
             <p>$50 - Ideal for birthdays, graduation, and yearbook photos.</p>
-        </div>
-        <div>
-            <h3>Prom Makeup</h3>
+        </section>
+        <section>
+            <h2>Prom Makeup</h2>
             <p>$80 - Perfect for prom, homecoming, and other events.</p>
-        </div>
-        <div>
-            <h3>Bridal Makeup</h3>
+        </section>
+        <section>
+            <h2>Bridal Makeup</h2>
             <p>$100 - For weddings and special occasions.</p>
-        </div>
+        </section>
     </main>
 
     <footer>
