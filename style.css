@@ -2,7 +2,7 @@
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     background-color: #FCE4EC; /* Baby Pink Background */
-    color: #000000; /* Black Text */
+    color: #333333; /* Dark Gray Text */
     margin: 0;
     padding: 0;
 }
@@ -13,7 +13,7 @@ body {
 }
 
 .nav-link, .navbar-brand {
-    color: #000000; /* Black text for links */
+    color: #333333; /* Dark Gray text for links */
 }
 
 .nav-link.active {
@@ -35,13 +35,14 @@ a:hover {
 
 /* Contact Section */
 .contact-container {
-    max-width: 600px;
+    max-width: 800px;
     margin: 50px auto;
     padding: 20px;
     background-color: #FFEFF7; /* Very light pink background */
     border: 1px solid #FFB6C1; /* Soft pink border */
     border-radius: 8px;
     text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .contact-info p {
@@ -53,9 +54,14 @@ a:hover {
 }
 
 .social-icons a img {
-    width: 30px;
-    height: 30px;
-    margin: 0 5px;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.1);
 }
 
 /* Contact Form Section */
@@ -67,10 +73,17 @@ a:hover {
     border: 1px solid #FFB6C1; /* Soft pink border */
     border-radius: 8px;
     text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #FF69B4;
 }
 
 input[type="text"], input[type="email"], textarea {
@@ -83,9 +96,13 @@ input[type="text"], input[type="email"], textarea {
     background-color: #FFF0F5; /* Light pink background */
 }
 
+textarea {
+    resize: vertical;
+}
+
 button {
     width: 100%;
-    padding: 10px;
+    padding: 15px;
     background-color: #FF1493; /* Deep pink */
     color: white;
     border-radius: 5px;
@@ -93,6 +110,7 @@ button {
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
@@ -102,12 +120,14 @@ button:hover {
 /* Footer */
 footer {
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
     background-color: #FFC0CB; /* Light pink footer background */
-    color: #000000; /* Black text for footer */
+    color: #333333; /* Dark gray text for footer */
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Additional Styling */
 p {
     font-size: 18px;
+    line-height: 1.6;
 }
