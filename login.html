@@ -8,14 +8,13 @@
 </head>
 <body>
     <header>
-        <!-- Navigation Bar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="home.html">OMA Ottawa Makeup Artist</a>
+                <a class="navbar-brand" href="index.html" style="color: #FF69B4;">OMA Ottawa Makeup Artist</a>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="home.html">Home</a>
+                            <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="services.html">Services</a>
@@ -33,18 +32,24 @@
     </header>
 
     <main>
-        <h2>Login</h2>
-        <form action="path_to_server_handling_login" method="post">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-            <button type="submit">Login</button>
-        </form>
+        <div class="login-container">
+            <h1 style="color: #FF69B4;">Login</h1>
+            <form action="path_to_server_handling_login" method="post">
+                <div class="form-group">
+                    <label for="username" style="color: #FFB6C1;">Username</label>
+                    <input type="text" id="username" name="username" required style="border-color: #FF69B4;">
+                </div>
+                <div class="form-group">
+                    <label for="password" style="color: #FFB6C1;">Password</label>
+                    <input type="password" id="password" name="password" required style="border-color: #FF69B4;">
+                </div>
+                <button type="submit" style="background-color: #FF69B4; color: white; border: none;">Login</button>
+            </form>
+        </div>
     </main>
 
     <footer>
-        <p>Contact us at [email] | © 2024 SEG3125 Project 1</p>
+        <p style="color: #FFB6C1;">Contact us at [email] | © 2024 SEG3125 Project 1</p>
     </footer>
 </body>
 </html>
