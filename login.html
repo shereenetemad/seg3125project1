@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - OMA Ottawa Makeup Artist</title>
+    <title>OMA Ottawa Makeup Artist</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html" style="color: #FF69B4;">OMA Ottawa Makeup Artist</a>
+                <a class="navbar-brand" href="index.html">OMA Ottawa Makeup Artist</a>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
+                            <a class="nav-link active" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="services.html">Services</a>
@@ -32,24 +32,33 @@
     </header>
 
     <main>
-        <div class="login-container">
-            <h1 style="color: #FF69B4;">Login</h1>
-            <form action="path_to_server_handling_login" method="post">
-                <div class="form-group">
-                    <label for="username" style="color: #FFB6C1;">Username</label>
-                    <input type="text" id="username" name="username" required style="border-color: #FF69B4;">
+        <section class="hero">
+            <h1>Welcome to OMA Ottawa Makeup Artist</h1>
+            <p>Your beauty is our canvas. Explore our services and let us enhance your natural beauty.</p>
+            <a href="services.html" class="btn-primary">Discover Our Services</a>
+        </section>
+
+        <section class="featured-services">
+            <h2>Featured Services</h2>
+            <div class="services-list">
+                <div>
+                    <h3>Bridal Makeup</h3>
+                    <p>Ensure you look flawless on your special day with our expert bridal makeup services.</p>
                 </div>
-                <div class="form-group">
-                    <label for="password" style="color: #FFB6C1;">Password</label>
-                    <input type="password" id="password" name="password" required style="border-color: #FF69B4;">
+                <div>
+                    <h3>Event Makeup</h3>
+                    <p>From proms to corporate events, our professional makeup artists have you covered.</p>
                 </div>
-                <button type="submit" style="background-color: #FF69B4; color: white; border: none;">Login</button>
-            </form>
-        </div>
+                <div>
+                    <h3>Personal Styling</h3>
+                    <p>Get a complete makeover and styling advice for any occasion.</p>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <p style="color: #FFB6C1;">Contact us at [email] | © 2024 SEG3125 Project 1</p>
+        <p>Contact us at [email] | © 2024 SEG3125 Project 1</p>
     </footer>
 </body>
 </html>
