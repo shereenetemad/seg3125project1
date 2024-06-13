@@ -33,47 +33,46 @@
 
     <main>
         <div class="booking-container">
-            <h1 style="color: #FF69B4;">Book Your Appointment</h1>
-            <p style="color: #FF69B4;">Select from our experienced makeup artists who all hold cosmetology degrees and have extensive experience in the field.</p>
-
-            <form action="path_to_server_handling_booking" method="post">
+            <h1>Book Your Appointment</h1>
+            <p>Select from our experienced makeup artists who all hold cosmetology degrees and have extensive experience in the field.</p>
+            <form action="path_to_server_handling_booking_form" method="post">
                 <div class="form-group">
-                    <label for="artist" style="color: #FFB6C1;">Choose Your Makeup Artist</label>
-                    <select id="artist" name="artist" required style="border-color: #FF69B4;">
+                    <label for="artist">Choose Your Makeup Artist</label>
+                    <select id="artist" name="artist" required>
                         <option value="" disabled selected>Select an artist</option>
-                        <option value="Britney">Britney - A seasoned artist with a rich background in wedding and event makeup.</option>
-                        <option value="Sabrina">Sabrina - Specializes in editorial and high-fashion looks.</option>
-                        <option value="Sophia">Sophia - Known for her meticulous attention to detail and natural styling.</option>
+                        <option value="Britney">Britney</option>
+                        <option value="Sabrina">Sabrina</option>
+                        <option value="Sophia">Sophia</option>
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="service" style="color: #FFB6C1;">Choose Your Makeup Service</label>
-                    <select id="service" name="service" required style="border-color: #FF69B4;">
+                    <label for="service">Choose Your Makeup Service</label>
+                    <select id="service" name="service" required>
                         <option value="" disabled selected>Select a service</option>
-                        <option value="Natural Makeup">Natural Makeup - $50</option>
-                        <option value="Prom Makeup">Prom Makeup - $80</option>
-                        <option value="Bridal Makeup">Bridal Makeup - $100</option>
+                        <option value="Natural Makeup">$50 - Natural Makeup</option>
+                        <option value="Prom Makeup">$80 - Prom Makeup</option>
+                        <option value="Bridal Makeup">$100 - Bridal Makeup</option>
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="date" style="color: #FFB6C1;">Date</label>
-                    <input type="date" id="date" name="date" required style="border-color: #FF69B4;">
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date" required>
                 </div>
                 <div class="form-group">
-                    <label for="time" style="color: #FFB6C1;">Time</label>
-                    <input type="time" id="time" name="time" required style="border-color: #FF69B4;">
+                    <label for="time">Time</label>
+                    <input type="time" id="time" name="time" required>
                 </div>
                 <div class="form-group">
-                    <label for="details" style="color: #FFB6C1;">Additional Details</label>
-                    <textarea id="details" name="details" rows="4" style="border-color: #FF69B4;"></textarea>
+                    <label for="details">Additional Details</label>
+                    <textarea id="details" name="details" rows="4" required></textarea>
                 </div>
-                <button type="submit" style="background-color: #FF69B4; color: white; border: none;">Book Now</button>
+                <button type="submit">Book Now</button>
             </form>
         </div>
     </main>
 
     <footer>
-        <p style="color: #FFB6C1;">Contact us at [email] | © 2024 SEG3125 Project 1</p>
+        <p>Contact us at [email] | © 2024 SEG3125 Project 1</p>
     </footer>
 </body>
 </html>
