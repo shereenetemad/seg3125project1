@@ -33,39 +33,8 @@ a:hover {
     color: #FF1493; /* Darker pink for hovered links */
 }
 
-/* Contact Section */
-.contact-container {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #FFEFF7; /* Very light pink background */
-    border: 1px solid #FFB6C1; /* Soft pink border */
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.contact-info p {
-    margin: 10px 0;
-    padding: 10px;
-    background-color: white;
-    border-radius: 5px;
-    border: 1px solid #FFB6C1;
-}
-
-.social-icons a img {
-    width: 40px;
-    height: 40px;
-    margin: 0 10px;
-    transition: transform 0.3s ease;
-}
-
-.social-icons a img:hover {
-    transform: scale(1.1);
-}
-
-/* Contact Form Section */
-.contact-form-container {
+/* Booking Section */
+.booking-container {
     max-width: 600px;
     margin: 50px auto;
     padding: 20px;
@@ -78,6 +47,7 @@ a:hover {
 
 .form-group {
     margin-bottom: 20px;
+    text-align: left;
 }
 
 label {
@@ -86,7 +56,7 @@ label {
     color: #FF69B4;
 }
 
-input[type="text"], input[type="email"], textarea {
+input[type="text"], input[type="email"], input[type="date"], input[type="time"], select, textarea {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
