@@ -33,70 +33,45 @@ a:hover {
     color: #FF1493; /* Darker pink for hovered links */
 }
 
-/* Hero Section */
-.hero {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #FFEFF7; /* Very light pink */
-}
-
-.hero h1 {
-    color: #FF69B4; /* Hot pink */
-}
-
-/* Services Section */
-.services-container {
-    text-align: center;
-    padding: 20px;
-}
-
-.services-list {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.service {
-    background-color: white;
-    border: 1px solid #FFB6C1; /* Soft pink border */
-    border-radius: 8px;
-    padding: 20px;
-    width: 250px;
-    text-align: center;
-}
-
-.service img {
-    width: 100%;
-    border-radius: 8px;
-}
-
-.service h3 {
-    color: #FF69B4; /* Hot pink */
-}
-
-.service p {
-    margin: 10px 0;
-}
-
-/* Artists Section */
-.artists-container {
-    padding: 20px;
-    text-align: center;
-}
-
-.artist-profile {
-    margin: 20px auto;
-    background-color: #FFEFF7; /* Very light pink */
-    border: 1px solid #FFB6C1; /* Soft pink border */
-    border-radius: 8px;
-    padding: 20px;
+/* Booking Section */
+.booking-container {
     max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #FFEFF7; /* Very light pink background */
+    border: 1px solid #FFB6C1; /* Soft pink border */
+    border-radius: 8px;
+    text-align: center;
 }
 
-/* Call to Action Section */
-.booking-call-to-action {
-    padding: 20px;
-    text-align: center;
+.form-group {
+    margin-bottom: 15px;
+}
+
+select, input[type="text"], input[type="email"], input[type="date"], input[type="time"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 2px solid #FF69B4; /* Hot pink border for input fields */
+    box-sizing: border-box;
+    background-color: #FFF0F5; /* Light pink background */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #FF1493; /* Deep pink */
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #FF69B4; /* Darker pink on hover */
 }
 
 /* Footer */
@@ -105,11 +80,4 @@ footer {
     padding: 10px 0;
     background-color: #FFC0CB; /* Light pink footer background */
     color: #000000; /* Black text for footer */
-}
-
-/* Professional Hearts Styling */
-.heart {
-    color: #FF69B4;
-    font-size: 1.5em;
-    margin: 0 5px;
 }
