@@ -1,61 +1,139 @@
+/* Global Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #FFF0F5; /* Light pink background */
-    color: #333;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #FCE4EC; /* Baby Pink Background */
+    color: #000000; /* Black Text */
     margin: 0;
     padding: 0;
 }
 
+/* Navigation Bar */
 .navbar {
-    background-color: #FFC0CB; /* Lighter pink for the navbar */
+    background-color: #FFB6C1; /* Taffy Pink for the navbar */
 }
 
 .nav-link, .navbar-brand {
+    color: #000000; /* Black text for links */
+}
+
+.nav-link.active {
+    font-weight: bold;
+}
+
+/* Main Content */
+h1, h2, h3, h4, h5, h6 {
+    color: #FF69B4; /* Hot pink for headings */
+}
+
+a {
     color: #FF69B4; /* Hot pink for links */
 }
 
-.login-container {
-    max-width: 400px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #FFEFF7; /* Very light pink */
-    border: 1px solid #FFB6C1; /* Soft pink border */
-    border-radius: 8px;
+a:hover {
+    color: #FF1493; /* Darker pink for hovered links */
 }
 
-.form-group {
-    margin-bottom: 15px;
-}
-
-input[type="text"], input[type="password"] {
+/* Forms and Buttons */
+input[type="text"], input[type="email"], input[type="date"], input[type="time"], textarea, select {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
     border-radius: 5px;
-    border: 2px solid #FF69B4; /* Hot pink border for input fields */
+    border: 2px solid #FF69B4; /* Hot pink border */
     box-sizing: border-box;
+    background-color: #FFF0F5; /* Light pink background */
 }
 
 button {
     width: 100%;
     padding: 10px;
-    background-color: #FF1493; /* Deep pink */
+    background-color: #FF69B4; /* Hot pink button */
     color: white;
     border-radius: 5px;
     border: none;
     cursor: pointer;
     font-size: 16px;
+    font-weight: bold;
 }
 
 button:hover {
-    background-color: #FF69B4;
+    background-color: #FF1493; /* Darker pink on hover */
 }
 
+/* Containers */
+.contact-container, .booking-container, .login-container, .services-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #FFEFF7; /* Very light pink background */
+    border: 1px solid #FFB6C1; /* Soft pink border */
+    border-radius: 8px;
+}
+
+/* Footer */
 footer {
     text-align: center;
     padding: 10px 0;
-    background-color: #FFC0CB;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    background-color: #FFC0CB; /* Light pink footer background */
+    color: #000000; /* Black text for footer */
+}
+
+/* Heart Motifs */
+.heart {
+    color: #FF69B4;
+    font-size: 1.5em;
+    margin: 0 5px;
+}
+
+/* Hero Section for Home Page */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #FFEFF7; /* Very light pink */
+}
+
+.hero h1 {
+    color: #FF69B4; /* Hot pink */
+}
+
+.hero p {
+    color: #000000; /* Black text */
+}
+
+.btn-primary {
+    padding: 10px 20px;
+    background-color: #FF69B4; /* Hot pink */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #FF1493; /* Darker pink */
+}
+
+/* Featured Services */
+.featured-services {
+    padding: 20px;
+    background-color: #FFF0F5; /* Light pink */
+}
+
+.services-list div {
+    margin: 20px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #FFB6C1; /* Soft pink border */
+    border-radius: 5px;
+}
+
+/* Professional Hearts Styling */
+.heart-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.heart {
+    color: #FF69B4; /* Hot pink */
+    font-size: 2em;
+    margin: 0 10px;
 }
