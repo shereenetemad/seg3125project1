@@ -1,0 +1,61 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #FFF0F5; /* Light pink background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #FFC0CB; /* Lighter pink for the navbar */
+}
+
+.nav-link, .navbar-brand {
+    color: #FF69B4; /* Hot pink for links */
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #FFEFF7; /* Very light pink */
+    border: 1px solid #FFB6C1; /* Soft pink border */
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 2px solid #FF69B4; /* Hot pink border for input fields */
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #FF1493; /* Deep pink */
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #FF69B4;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #FFC0CB;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
