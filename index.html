@@ -6,46 +6,31 @@
     <title>Home - OMA Ottawa Makeup Artist</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
             background-color: #ffe6f2;
             color: #333;
             font-family: 'Arial', sans-serif;
-            text-align: center; /* Center alignment for the content */
         }
         h1, h2 {
             font-family: 'Pacifico', cursive;
             color: #ff66b2;
-            text-align: center; /* Centered headers */
         }
         .btn-primary {
             background-color: #ff66b2;
             border-color: #ff66b2;
-            font-family: 'Pacifico', cursive;
         }
         .btn-primary:hover {
             background-color: #e60073;
             border-color: #e60073;
         }
-        .navbar {
-            background-color: #ffe6f2;
-            padding: 10px 0;
-        }
-        .navbar-brand, .nav-link {
+        .navbar-brand {
             color: #ff66b2 !important;
             font-family: 'Pacifico', cursive;
-            text-align: center;
-        }
-        footer {
-            background-color: #ff99cc;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
         }
         .container {
+            text-align: center;
             padding: 50px 20px;
         }
         .container p {
@@ -55,33 +40,32 @@
     </style>
 </head>
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">OMA Ottawa Makeup Artist</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="services.html">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="booking.html">Book Appointment</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">OMA Ottawa Makeup Artist</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="booking.html">Book Appointment</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-</header>
-
+        </nav>
+    </header>
 
     <div class="container">
         <h1>Welcome to OMA Ottawa Makeup Artist</h1>
@@ -90,10 +74,6 @@
         <h2>Our Makeup Services</h2>
         <p>We specialize in Bridal, Prom, Natural, and more makeup options. We use high-end makeup brands like La Mer, MAC, Too Faced, Tom Ford, and Dior.</p>
     </div>
-
-    <footer>
-        <p>Contact us at [email] | © 2024 SEG3125 Project 1</p>
-    </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
