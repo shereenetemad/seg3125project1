@@ -3,13 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - OMA Ottawa Makeup Artist</title>
+    <title>Welcome to OMA Ottawa Makeup Artist</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Include Bootstrap CSS for styling -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero-section {
+            background: #F8BBD0;
+            padding: 100px 0;
+            text-align: center;
+            color: #E91E63;
+        }
+        .hero-section h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            font-family: 'Pacifico', cursive;
+        }
+        .hero-section p {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+        }
+        .btn-custom {
+            background-color: #E91E63;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            border-radius: 5px;
+        }
+        .btn-custom:hover {
+            background-color: #D81B60;
+        }
+        .footer {
+            background-color: #F8BBD0;
+            padding: 20px;
+            text-align: center;
+            color: #E91E63;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Common header section -->
+    <!-- Navigation Bar -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
@@ -20,7 +54,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
+                            <a class="nav-link active" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="services.html">Services</a>
@@ -37,16 +71,20 @@
         </nav>
     </header>
 
-    <main class="container text-center">
-        <h1>Welcome to OMA Ottawa Makeup Artist</h1>
-        <p>Your beauty is our priority. Explore our services and book an appointment today!</p>
-    </main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1>Welcome to OMA Ottawa Makeup Artist</h1>
+            <p>Your beauty is our priority. Explore our services and book an appointment today!</p>
+            <a href="booking.html" class="btn btn-custom">Book Now</a>
+        </div>
+    </section>
 
     <footer class="footer">
         <p>Contact us at [email] | © 2024 SEG3125 Project 1</p>
     </footer>
 
-    <!-- Include Bootstrap JS for interactivity -->
+    <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
