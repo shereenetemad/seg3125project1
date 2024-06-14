@@ -5,6 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services - OMA Ottawa Makeup Artist</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Include Bootstrap CSS for styling -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #F9E6F7;
+            color: #333;
+            font-family: 'Arial', sans-serif;
+        }
+        .navbar {
+            margin-bottom: 30px;
+        }
+        .card {
+            margin: 20px 0;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .card img {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .card-body {
+            text-align: center;
+        }
+        .card-title {
+            color: #E75480;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+        }
+        .footer {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #E75480;
+            color: #fff;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -12,8 +51,11 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">OMA Ottawa Makeup Artist</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
@@ -33,71 +75,89 @@
     </header>
 
     <main class="container">
-        <h1>Our Services</h1>
-        <section>
+        <h1 class="text-center">Our Services</h1>
+
+        <section class="service-section text-center">
             <h2>Available Makeup Services</h2>
             <p>Choose from our variety of makeup services tailored to your needs:</p>
-            <div class="card-deck">
-                <div class="card">
-                    <img src="natural_makeup.jpg" class="card-img-top" alt="Natural Makeup">
-                    <div class="card-body">
-                        <h5 class="card-title">Natural Makeup</h5>
-                        <p class="card-text">$50 - Ideal for birthdays, graduation, and yearbook photos.</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="natural_makeup.jpg" class="card-img-top" alt="Natural Makeup">
+                        <div class="card-body">
+                            <h5 class="card-title">Natural Makeup</h5>
+                            <p class="card-text">$50 - Ideal for birthdays, graduation, and yearbook photos.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="prom_makeup.jpg" class="card-img-top" alt="Prom Makeup">
-                    <div class="card-body">
-                        <h5 class="card-title">Prom Makeup</h5>
-                        <p class="card-text">$80 - Perfect for prom, homecoming, and other events.</p>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="prom_makeup.jpg" class="card-img-top" alt="Prom Makeup">
+                        <div class="card-body">
+                            <h5 class="card-title">Prom Makeup</h5>
+                            <p class="card-text">$80 - Perfect for prom, homecoming, and other events.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="bridal_makeup.jpg" class="card-img-top" alt="Bridal Makeup">
-                    <div class="card-body">
-                        <h5 class="card-title">Bridal Makeup</h5>
-                        <p class="card-text">$100 - For weddings and special occasions.</p>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="bridal_makeup.jpg" class="card-img-top" alt="Bridal Makeup">
+                        <div class="card-body">
+                            <h5 class="card-title">Bridal Makeup</h5>
+                            <p class="card-text">$100 - For weddings and special occasions.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section>
+        <section class="artist-section text-center mt-5">
             <h2>Meet Our Makeup Artists</h2>
             <p>Each of our artists holds a degree in cosmetology and brings extensive experience to their craft:</p>
-            <div class="card-deck">
-                <div class="card">
-                    <img src="britney.jpg" class="card-img-top" alt="Britney">
-                    <div class="card-body">
-                        <h5 class="card-title">Britney</h5>
-                        <p class="card-text">Britney, with a rich background in wedding and event makeup, ensures every look is stunning.</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="britney.jpg" class="card-img-top" alt="Britney">
+                        <div class="card-body">
+                            <h5 class="card-title">Britney</h5>
+                            <p class="card-text">Britney, with a rich background in wedding and event makeup, ensures every look is stunning.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="sabrina.jpg" class="card-img-top" alt="Sabrina">
-                    <div class="card-body">
-                        <h5 class="card-title">Sabrina</h5>
-                        <p class="card-text">Sabrina specializes in editorial and high-fashion looks, perfect for any major event.</p>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="sabrina.jpg" class="card-img-top" alt="Sabrina">
+                        <div class="card-body">
+                            <h5 class="card-title">Sabrina</h5>
+                            <p class="card-text">Sabrina specializes in editorial and high-fashion looks, perfect for any major event.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="sophia.jpg" class="card-img-top" alt="Sophia">
-                    <div class="card-body">
-                        <h5 class="card-title">Sophia</h5>
-                        <p class="card-text">Sophia is known for her meticulous attention to detail and natural styling, preferred for a refined appearance.</p>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="sophia.jpg" class="card-img-top" alt="Sophia">
+                        <div class="card-body">
+                            <h5 class="card-title">Sophia</h5>
+                            <p class="card-text">Sophia is known for her meticulous attention to detail and natural styling, preferred for a refined appearance.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        
-        <section>
+
+        <section class="booking-section text-center mt-5">
             <h2>Book a Session</h2>
             <p>To book a session with any of our artists, please visit our <a href="booking.html">Booking Page</a>.</p>
         </section>
     </main>
 
-    <footer>
+    <footer class="footer">
         <p>Contact us at [email] | © 2024 SEG3125 Project 1</p>
     </footer>
+
+    <!-- Include Bootstrap JS for interactivity -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
