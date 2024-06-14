@@ -5,17 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - OMA Ottawa Makeup Artist</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Include Bootstrap CSS for styling -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Common header section -->
     <header>
-        <!-- Navigation Bar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="home.html">OMA Ottawa Makeup Artist</a>
+                <a class="navbar-brand" href="index.html">OMA Ottawa Makeup Artist</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" href="home.html">Home</a>
+                            <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="services.html">Services</a>
@@ -32,13 +37,18 @@
         </nav>
     </header>
 
-    <main>
+    <main class="container text-center">
         <h1>Welcome to OMA Ottawa Makeup Artist</h1>
-        <p>Your beauty is our profession. Find out more about our services.</p>
+        <p>Your beauty is our priority. Explore our services and book an appointment today!</p>
     </main>
 
-    <footer>
+    <footer class="footer">
         <p>Contact us at [email] | © 2024 SEG3125 Project 1</p>
     </footer>
+
+    <!-- Include Bootstrap JS for interactivity -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
