@@ -3,47 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to OMA Ottawa Makeup Artist</title>
+    <title>Home - OMA Ottawa Makeup Artist</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <style>
-        .hero-section {
-            background: #F8BBD0;
-            padding: 100px 0;
-            text-align: center;
-            color: #E91E63;
+        body {
+            background-color: #ffe6f2;
+            color: #333;
+            font-family: 'Arial', sans-serif;
         }
-        .hero-section h1 {
-            font-size: 3em;
-            margin-bottom: 20px;
+        h1, h2 {
+            font-family: 'Pacifico', cursive;
+            color: #ff66b2;
+        }
+        .btn-primary {
+            background-color: #ff66b2;
+            border-color: #ff66b2;
+        }
+        .btn-primary:hover {
+            background-color: #e60073;
+            border-color: #e60073;
+        }
+        .navbar-brand {
+            color: #ff66b2 !important;
             font-family: 'Pacifico', cursive;
         }
-        .hero-section p {
-            font-size: 1.2em;
-            margin-bottom: 40px;
-        }
-        .btn-custom {
-            background-color: #E91E63;
+        footer {
+            background-color: #ff99cc;
             color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 1.2em;
-            border-radius: 5px;
-        }
-        .btn-custom:hover {
-            background-color: #D81B60;
-        }
-        .footer {
-            background-color: #F8BBD0;
-            padding: 20px;
             text-align: center;
-            color: #E91E63;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .container {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .container p {
+            font-size: 18px;
+            color: #333;
         }
     </style>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation Bar -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
@@ -71,20 +75,18 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero-section">
-        <div class="container">
-            <h1>Welcome to OMA Ottawa Makeup Artist</h1>
-            <p>Your beauty is our priority. Explore our services and book an appointment today!</p>
-            <a href="booking.html" class="btn btn-custom">Book Now</a>
-        </div>
-    </section>
+    <div class="container">
+        <h1>Welcome to OMA Ottawa Makeup Artist</h1>
+        <p>Your beauty is our priority. Explore our services and book an appointment today!</p>
+        <a href="booking.html" class="btn btn-primary">Book Now</a>
+        <h2>Our Makeup Services</h2>
+        <p>We specialize in Bridal, Prom, Natural, and more makeup options. We use high-end makeup brands like La Mer, MAC, Too Faced, Tom Ford, and Dior.</p>
+    </div>
 
-    <footer class="footer">
+    <footer>
         <p>Contact us at [email] | © 2024 SEG3125 Project 1</p>
     </footer>
 
-    <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
