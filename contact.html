@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - OMA Ottawa Makeup Artist</title>
+    <title>Contact Us - OMA Ottawa Makeup Artist</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
+        <!-- Navigation Bar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">OMA Ottawa Makeup Artist</a>
@@ -31,50 +32,44 @@
         </nav>
     </header>
 
-    <main>
-        <div class="contact-container">
-            <h1>Contact Us</h1>
-            <div class="contact-info">
-                <p><strong>Phone:</strong> (613) 123-4567</p>
-                <p><strong>Email:</strong> <a href="mailto:OttawaMakeupArtist@Business.com">OttawaMakeupArtist@Business.com</a></p>
-                <p><strong>Social:</strong> @OttawaMakeupArtist</p>
-                <p>
-                    <a href="https://facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
-                    <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
-                    <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
-                </p>
-                <p><strong>Location:</strong> Tanger Outlet Mall, Kanata, Ottawa ON</p>
-                <p><strong>Hours:</strong> Monday-Friday 8:00am-8:00pm - Closed Weekends</p>
-            </div>
-
+    <main class="container">
+        <h1>Contact Us</h1>
+        <section>
+            <h2>Our Information</h2>
+            <p><strong>Phone:</strong> (613) 123-4567</p>
+            <p><strong>Email:</strong> <a href="mailto:OttawaMakeupArtist@Business.com">OttawaMakeupArtist@Business.com</a></p>
+            <p><strong>Social:</strong> @OttawaMakeupArtist</p>
+            <p>
+                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+            </p>
+            <p><strong>Location:</strong> Tanger Outlet Mall, Kanata, Ottawa ON</p>
+            <p><strong>Hours:</strong> Monday-Friday 8:00am-8:00pm - Closed Weekends</p>
+            <p>Have any questions or concerns? Feel free to fill out the form below!</p>
+        </section>
+        <section>
             <h2>Send Us a Message</h2>
-            <form class="contact-form" onsubmit="handleFormSubmission(event)">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
                 </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
                 </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
                 </div>
-                <button type="submit">Submit</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
             </form>
-        </div>
+        </section>
     </main>
 
     <footer>
         <p>Contact us at [email] | © 2024 SEG3125 Project 1</p>
     </footer>
-
-    <script>
-        function handleFormSubmission(event) {
-            event.preventDefault(); // Prevent the form from submitting the traditional way
-            alert("Thank you for contacting us! We will get back to you soon.");
-        }
-    </script>
 </body>
 </html>
