@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Appointment - OMA Ottawa Makeup Artist</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        function handleFormSubmission(event) {
+            event.preventDefault(); // Prevent the form from submitting the traditional way
+            window.location.href = 'confirmation.html'; // Redirect to the confirmation page
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -35,7 +41,7 @@
         <div class="booking-container">
             <h1>Book Your Appointment</h1>
             <p>Select from our experienced makeup artists who all hold cosmetology degrees and have extensive experience in the field.</p>
-            <form action="confirmation.html" method="post">
+            <form onsubmit="handleFormSubmission(event)">
                 <div class="form-group">
                     <label for="artist">Choose Your Makeup Artist</label>
                     <select id="artist" name="artist" required>
