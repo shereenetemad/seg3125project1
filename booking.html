@@ -5,30 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Appointment - OMA Ottawa Makeup Artist</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #ffe6f2;
+            color: #333;
+            font-family: 'Arial', sans-serif;
+        }
+        h1, h2 {
+            font-family: 'Pacifico', cursive;
+            color: #ff66b2;
+        }
+        .btn-primary {
+            background-color: #ff66b2;
+            border-color: #ff66b2;
+        }
+        .btn-primary:hover {
+            background-color: #e60073;
+            border-color: #e60073;
+        }
+        .navbar-brand {
+            color: #ff66b2 !important;
+            font-family: 'Pacifico', cursive;
+        }
+        .booking-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #FFEFF7;
+            border: 1px solid #FFB6C1;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #ff66b2;
+        }
+        input[type="text"], input[type="email"], input[type="date"], input[type="time"], select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 2px solid #ff66b2;
+            box-sizing: border-box;
+            background-color: #FFF0F5;
+        }
+        textarea {
+            resize: vertical;
+        }
+        button {
+            width: 100%;
+            padding: 15px;
+            background-color: #ff1493;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #ff69b4;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg" style="background-color: #FCE4EC; padding: 10px 20px;">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html" style="color: #FF1493; font-family: 'Pacifico', cursive; font-size: 24px;">OMA Ottawa Makeup Artist</a>
+                <a class="navbar-brand" href="index.html">OMA Ottawa Makeup Artist</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html" style="color: #FF1493; font-family: 'Pacifico', cursive;">Home</a>
+                            <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="services.html" style="color: #FF1493; font-family: 'Pacifico', cursive;">Services</a>
+                            <a class="nav-link" href="services.html">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="booking.html" style="color: #FF1493; font-family: 'Pacifico', cursive;">Book Appointment</a>
+                            <a class="nav-link active" href="booking.html">Book Appointment</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html" style="color: #FF1493; font-family: 'Pacifico', cursive;">Contact</a>
+                            <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -36,9 +105,9 @@
         </nav>
     </header>
 
-    <div class="container" style="background-color: #FFF0F5; border-radius: 10px; margin: 40px auto; padding: 20px; width: 80%; max-width: 500px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);">
-        <h1 style="text-align: center; color: #FF69B4; font-family: 'Pacifico', cursive;">Book Your Appointment</h1>
-        <form>
+    <div class="booking-container">
+        <h2>Book Your Appointment</h2>
+        <form action="thankyou.html" method="get">
             <div class="form-group">
                 <label for="name">Name</label>
                 <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
@@ -57,23 +126,23 @@
             </div>
             <div class="form-group">
                 <label for="artist">Choose Your Makeup Artist</label>
-                <select class="form-control" id="artist">
-                    <option>Select an artist</option>
-                    <option>Britney - Expert in wedding and event makeup</option>
-                    <option>Sabrina - Specializes in editorial and high-fashion looks</option>
-                    <option>Sophia - Known for natural and meticulous styling</option>
+                <select class="form-control" id="artist" required>
+                    <option value="" disabled selected>Select an artist</option>
+                    <option value="Britney">Britney</option>
+                    <option value="Sabrina">Sabrina</option>
+                    <option value="Sophia">Sophia</option>
                 </select>
             </div>
             <div class="form-group">
                 <label for="service">Choose Your Makeup Service</label>
-                <select class="form-control" id="service">
-                    <option>Select a service</option>
-                    <option>Natural Makeup - $50</option>
-                    <option>Prom Makeup - $80</option>
-                    <option>Bridal Makeup - $100</option>
+                <select class="form-control" id="service" required>
+                    <option value="" disabled selected>Select a service</option>
+                    <option value="Natural Makeup">Natural Makeup - $50</option>
+                    <option value="Prom Makeup">Prom Makeup - $80</option>
+                    <option value="Bridal Makeup">Bridal Makeup - $100</option>
                 </select>
             </div>
-            <button type="submit" class="btn btn-primary" style="background-color: #FF1493; border:none;">Book Now</button>
+            <button type="submit" class="btn btn-primary">Book Now</button>
         </form>
     </div>
 
