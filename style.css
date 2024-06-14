@@ -10,10 +10,12 @@ body {
 /* Navigation Bar */
 .navbar {
     background-color: #FFB6C1; /* Taffy Pink for the navbar */
+    text-align: center;
 }
 
 .nav-link, .navbar-brand {
     color: #333333; /* Dark Gray text for links */
+    font-family: 'Pacifico', cursive; /* Ensuring all navbar items use the cursive font */
 }
 
 .nav-link.active {
@@ -23,6 +25,7 @@ body {
 /* Main Content */
 h1, h2, h3, h4, h5, h6 {
     color: #FF69B4; /* Hot pink for headings */
+    font-family: 'Pacifico', cursive; /* Uniform cursive styling for headers */
 }
 
 a {
