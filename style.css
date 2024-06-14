@@ -26,6 +26,11 @@ body {
     font-weight: bold; /* Bold text for emphasis */
 }
 
+/* Ensure uniformity across all navigation links */
+.nav-item .nav-link {
+    color: #333333; /* Overriding any default styles that might cause inconsistency */
+}
+
 /* Main Content */
 h1, h2, h3, h4, h5, h6 {
     color: #FF69B4; /* Hot pink for headings */
@@ -40,46 +45,14 @@ a:hover {
     color: #FF1493; /* Darker pink for hovered links */
 }
 
-/* Booking Section */
-.booking-container {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #FFEFF7; /* Very light pink background */
-    border: 1px solid #FFB6C1; /* Soft pink border */
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+/* Additional Styling */
+p {
+    font-size: 18px;
+    line-height: 1.6;
 }
 
-.form-group {
-    margin-bottom: 20px;
-    text-align: left;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-    color: #FF69B4;
-}
-
-input[type="text"], input[type="email"], input[type="date"], input[type="time"], select, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border-radius: 5px;
-    border: 2px solid #FF69B4; /* Hot pink border for input fields */
-    box-sizing: border-box;
-    background-color: #FFF0F5; /* Light pink background */
-}
-
-textarea {
-    resize: vertical;
-}
-
-button {
-    width: 100%;
-    padding: 15px;
+/* Ensure the 'Book Now' and all buttons are consistently styled */
+button, .btn {
     background-color: #FF1493; /* Deep pink */
     color: white;
     border-radius: 5px;
@@ -88,35 +61,9 @@ button {
     font-size: 16px;
     font-weight: bold;
     transition: background-color 0.3s ease;
+    padding: 10px 20px;
 }
 
-button:hover {
+button:hover, .btn:hover {
     background-color: #FF69B4; /* Darker pink on hover */
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #FFC0CB; /* Light pink footer background */
-    color: #333333; /* Dark gray text for footer */
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-}
-
-/* Additional Styling */
-p {
-    font-size: 18px;
-    line-height: 1.6;
-}
-
-/* Responsive Navbar Toggle */
-.navbar-toggler {
-    border-color: #FF69B4;
-}
-
-.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23FF69B4' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
