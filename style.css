@@ -10,26 +10,30 @@ body {
 /* Navigation Bar */
 .navbar {
     background-color: #FFB6C1; /* Taffy Pink for the navbar */
-    text-align: center;
+    padding: 10px 0;
+    border-bottom: 5px solid #FF69B4; /* Hot pink bottom border for a distinct look */
 }
 
-.nav-link, .navbar-brand {
-    color: #333333; /* Dark Gray text for links */
-    font-family: 'Pacifico', cursive; /* Ensuring all navbar items use the cursive font */
+.navbar-brand, .nav-link {
+    color: #333333; /* Dark text for contrast */
+    font-family: 'Pacifico', cursive; /* Consistent cursive font across all headers */
+    text-transform: uppercase; /* Uppercase text for a clean appearance */
+    font-size: 20px; /* Appropriate font size for visibility */
 }
 
-.nav-link.active {
-    font-weight: bold;
+.nav-link:hover, .nav-link.active {
+    color: #FF69B4; /* Hot pink for hover and active states */
+    font-weight: bold; /* Bold text for emphasis */
 }
 
 /* Main Content */
 h1, h2, h3, h4, h5, h6 {
     color: #FF69B4; /* Hot pink for headings */
-    font-family: 'Pacifico', cursive; /* Uniform cursive styling for headers */
 }
 
 a {
     color: #FF69B4; /* Hot pink for links */
+    text-decoration: none; /* No underline for a cleaner look */
 }
 
 a:hover {
@@ -96,11 +100,23 @@ footer {
     padding: 20px 0;
     background-color: #FFC0CB; /* Light pink footer background */
     color: #333333; /* Dark gray text for footer */
-    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 /* Additional Styling */
 p {
     font-size: 18px;
     line-height: 1.6;
+}
+
+/* Responsive Navbar Toggle */
+.navbar-toggler {
+    border-color: #FF69B4;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23FF69B4' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
