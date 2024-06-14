@@ -5,25 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Appointment - OMA Ottawa Makeup Artist</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Include Bootstrap CSS for styling -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        .booking-form {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            margin: auto;
-            max-width: 500px;
+        .booking-section {
+            background: #FCE4EC;
+            padding: 50px 0;
         }
-        .booking-form h2 {
-            color: #E75480;
-            margin-bottom: 20px;
+        .booking-section h1 {
+            font-size: 2.5em;
+            color: #E91E63;
+            text-align: center;
+            margin-bottom: 30px;
+            font-family: 'Pacifico', cursive;
+        }
+        .booking-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        .booking-form label {
+            color: #E91E63;
+        }
+        .booking-form .form-control {
+            border: 2px solid #E91E63;
+            border-radius: 5px;
+        }
+        .booking-form .btn-custom {
+            background-color: #E91E63;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            width: 100%;
+        }
+        .booking-form .btn-custom:hover {
+            background-color: #D81B60;
         }
     </style>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Common header section -->
+    <!-- Navigation Bar -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
@@ -51,46 +77,51 @@
         </nav>
     </header>
 
-    <main class="container text-center">
-        <h2>Book Your Appointment</h2>
-        <form class="booking-form">
-            <div class="form-group">
-                <label for="artist">Choose Your Makeup Artist</label>
-                <select class="form-control" id="artist">
-                    <option>Britney</option>
-                    <option>Sabrina</option>
-                    <option>Sophia</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="service">Choose Your Makeup Service</label>
-                <select class="form-control" id="service">
-                    <option>Natural Makeup - $50</option>
-                    <option>Prom Makeup - $80</option>
-                    <option>Bridal Makeup - $100</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="date">Date</label>
-                <input type="date" class="form-control" id="date">
-            </div>
-            <div class="form-group">
-                <label for="time">Time</label>
-                <input type="time" class="form-control" id="time">
-            </div>
-            <div class="form-group">
-                <label for="details">Additional Details</label>
-                <textarea class="form-control" id="details" rows="3"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Book Now</button>
-        </form>
-    </main>
+    <!-- Booking Section -->
+    <section class="booking-section">
+        <div class="container">
+            <h1>Book Your Appointment</h1>
+            <form class="booking-form" action="thankyou.html" method="POST">
+                <div class="form-group">
+                    <label for="artist">Choose Your Makeup Artist</label>
+                    <select class="form-control" id="artist" name="artist" required>
+                        <option value="">Select an artist</option>
+                        <option value="Britney">Britney</option>
+                        <option value="Sabrina">Sabrina</option>
+                        <option value="Sophia">Sophia</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="service">Choose Your Makeup Service</label>
+                    <select class="form-control" id="service" name="service" required>
+                        <option value="">Select a service</option>
+                        <option value="Natural Makeup - $50">Natural Makeup - $50</option>
+                        <option value="Prom Makeup - $80">Prom Makeup - $80</option>
+                        <option value="Bridal Makeup - $100">Bridal Makeup - $100</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date</label>
+                    <input type="date" class="form-control" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Time</label>
+                    <input type="time" class="form-control" id="time" name="time" required>
+                </div>
+                <div class="form-group">
+                    <label for="details">Additional Details</label>
+                    <textarea class="form-control" id="details" name="details" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn btn-custom">Book Now</button>
+            </form>
+        </div>
+    </section>
 
     <footer class="footer">
         <p>Contact us at [email] | © 2024 SEG3125 Project 1</p>
     </footer>
 
-    <!-- Include Bootstrap JS for interactivity -->
+    <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
