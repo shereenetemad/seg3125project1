@@ -5,18 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Appointment - OMA Ottawa Makeup Artist</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <style>
         body {
             background-color: #ffe6f2;
             color: #333;
             font-family: 'Arial', sans-serif;
         }
-        .container {
-            max-width: 600px;
-            margin-top: 50px;
-        }
-        h1 {
+        h1, h2 {
             font-family: 'Pacifico', cursive;
             color: #ff66b2;
         }
@@ -28,6 +24,10 @@
             background-color: #e60073;
             border-color: #e60073;
         }
+        .navbar-brand {
+            color: #ff66b2 !important;
+            font-family: 'Pacifico', cursive;
+        }
         footer {
             background-color: #ff99cc;
             color: white;
@@ -37,24 +37,25 @@
             width: 100%;
             bottom: 0;
         }
-        .navbar-brand {
-            color: #ff66b2 !important;
-            font-family: 'Pacifico', cursive;
+        .form-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 100px);
         }
-        .form-control, .form-select {
-            border: 2px solid #ff66b2;
+        .form-box {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
         }
-        .form-control:focus, .form-select:focus {
-            border-color: #e60073;
-            box-shadow: none;
+        form {
+            width: 100%;
         }
     </style>
-    <script>
-        function submitForm(event) {
-            event.preventDefault();
-            window.location.href = "confirmation.html";
-        }
-    </script>
 </head>
 <body>
     <header>
@@ -84,41 +85,43 @@
         </nav>
     </header>
 
-    <div class="container">
-        <h1 class="text-center">Book Your Appointment</h1>
-        <form onsubmit="submitForm(event)">
-            <div class="form-group">
-                <label for="artist">Choose Your Makeup Artist</label>
-                <select class="form-control form-select" id="artist" required>
-                    <option value="" disabled selected>Select an artist</option>
-                    <option>Britney</option>
-                    <option>Sabrina</option>
-                    <option>Sophia</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="service">Choose Your Makeup Service</label>
-                <select class="form-control form-select" id="service" required>
-                    <option value="" disabled selected>Select a service</option>
-                    <option>Natural Makeup - $50</option>
-                    <option>Prom Makeup - $80</option>
-                    <option>Bridal Makeup - $100</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="date">Date</label>
-                <input type="date" class="form-control" id="date" required>
-            </div>
-            <div class="form-group">
-                <label for="time">Time</label>
-                <input type="time" class="form-control" id="time" required>
-            </div>
-            <div class="form-group">
-                <label for="details">Additional Details</label>
-                <textarea class="form-control" id="details" rows="3"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary btn-block">Book Now</button>
-        </form>
+    <div class="form-container">
+        <div class="form-box">
+            <h1>Book Your Appointment</h1>
+            <form action="thankyou.html" method="GET">
+                <div class="form-group">
+                    <label for="artist">Choose Your Makeup Artist</label>
+                    <select class="form-control" id="artist" name="artist" required>
+                        <option value="">Select an artist</option>
+                        <option value="britney">Britney</option>
+                        <option value="sabrina">Sabrina</option>
+                        <option value="sophia">Sophia</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="service">Choose Your Makeup Service</label>
+                    <select class="form-control" id="service" name="service" required>
+                        <option value="">Select a service</option>
+                        <option value="natural">Natural Makeup - $50</option>
+                        <option value="prom">Prom Makeup - $80</option>
+                        <option value="bridal">Bridal Makeup - $100</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date</label>
+                    <input type="date" class="form-control" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Time</label>
+                    <input type="time" class="form-control" id="time" name="time" required>
+                </div>
+                <div class="form-group">
+                    <label for="details">Additional Details</label>
+                    <textarea class="form-control" id="details" name="details" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Book Now</button>
+            </form>
+        </div>
     </div>
 
     <footer>
