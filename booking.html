@@ -33,4 +33,66 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
-                        <
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="booking.html">Book Appointment</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container text-center">
+        <h2>Book Your Appointment</h2>
+        <form class="booking-form">
+            <div class="form-group">
+                <label for="artist">Choose Your Makeup Artist</label>
+                <select class="form-control" id="artist">
+                    <option>Britney</option>
+                    <option>Sabrina</option>
+                    <option>Sophia</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="service">Choose Your Makeup Service</label>
+                <select class="form-control" id="service">
+                    <option>Natural Makeup - $50</option>
+                    <option>Prom Makeup - $80</option>
+                    <option>Bridal Makeup - $100</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="date">Date</label>
+                <input type="date" class="form-control" id="date">
+            </div>
+            <div class="form-group">
+                <label for="time">Time</label>
+                <input type="time" class="form-control" id="time">
+            </div>
+            <div class="form-group">
+                <label for="details">Additional Details</label>
+                <textarea class="form-control" id="details" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Book Now</button>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <p>Contact us at [email] | © 2024 SEG3125 Project 1</p>
+    </footer>
+
+    <!-- Include Bootstrap JS for interactivity -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
