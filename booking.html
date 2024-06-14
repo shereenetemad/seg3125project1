@@ -5,132 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Appointment - OMA Ottawa Makeup Artist</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <style>
-        body {
-            background-color: #ffe6f2;
-            color: #333;
-            font-family: 'Arial', sans-serif;
-        }
-        h1, h2 {
-            font-family: 'Pacifico', cursive;
-            color: #ff66b2;
-        }
-        .btn-primary {
-            background-color: #ff66b2;
-            border-color: #ff66b2;
-        }
-        .btn-primary:hover {
-            background-color: #e60073;
-            border-color: #e60073;
-        }
-        .navbar-brand {
-            color: #ff66b2 !important;
-            font-family: 'Pacifico', cursive;
-        }
-        footer {
-            background-color: #ff99cc;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-        .form-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: calc(100vh - 100px);
-        }
-        .form-box {
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            width: 100%;
-            max-width: 500px;
-            text-align: center;
-        }
-        form {
-            width: 100%;
-        }
-    </style>
 </head>
 <body>
-   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">OMA Ottawa Makeup Artist</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="services.html">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="booking.html">Book Appointment</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg" style="background-color: #FCE4EC;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html" style="color: #FF1493; font-family: 'Pacifico', cursive;">OMA Ottawa Makeup Artist</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html" style="color: #FF1493;">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html" style="color: #FF1493;">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="booking.html" style="color: #FF1493;">Book Appointment</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html" style="color: #FF1493;">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-</header>
+        </nav>
+    </header>
 
-
-    <div class="form-container">
-        <div class="form-box">
-            <h1>Book Your Appointment</h1>
-            <form action="thankyou.html" method="GET">
-                <div class="form-group">
-                    <label for="artist">Choose Your Makeup Artist</label>
-                    <select class="form-control" id="artist" name="artist" required>
-                        <option value="">Select an artist</option>
-                        <option value="britney">Britney</option>
-                        <option value="sabrina">Sabrina</option>
-                        <option value="sophia">Sophia</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="service">Choose Your Makeup Service</label>
-                    <select class="form-control" id="service" name="service" required>
-                        <option value="">Select a service</option>
-                        <option value="natural">Natural Makeup - $50</option>
-                        <option value="prom">Prom Makeup - $80</option>
-                        <option value="bridal">Bridal Makeup - $100</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="date">Date</label>
-                    <input type="date" class="form-control" id="date" name="date" required>
-                </div>
-                <div class="form-group">
-                    <label for="time">Time</label>
-                    <input type="time" class="form-control" id="time" name="time" required>
-                </div>
-                <div class="form-group">
-                    <label for="details">Additional Details</label>
-                    <textarea class="form-control" id="details" name="details" rows="3"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Book Now</button>
-            </form>
-        </div>
-    </div>
-
-    <footer>
-        <p>Contact us at [email] | © 2024 SEG3125 Project 1</p>
-    </footer>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
-</html>
+    <div class="container" style="background-color: #FFEFF7; border: 1px solid #FFB6C1; border-radius: 8px; padding: 20px; max-width: 600px; margin: 50px auto; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+        <h1 style="color: #FF69B4; text-align: center;">Book Your Appointment</h1>
+        <form>
+            <div class="form-group">
+                <label for="artist" style="color: #FF69B4;">Choose Your Makeup Artist</label>
+                <select class="form-control" id="artist" style="border-color: #FF69B4; background-color: #FFF0F5;">
+                    <option>Select an artist</option>
+                    <option>Artist 1</option>
+                    <option>Artist 2</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="service" style="color: #FF69B4;">Choose Your Makeup Service</label>
+                <select class="form-control" id="service" style="border-color: #FF69B4; background-color: #FFF0F5;">
+                    <option>Select a service</option>
+                    <option>Service 1</option>
+                    <option>Service 2</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="date" style="color: #FF69B4;">Date</label>
+                <input type="date" class="form-control" id="date" style="border-color: #FF69B4; background-color: #FFF0F5;">
+            </div>
+            <div class="form-group">
+                <label for="time" style="color: #FF69B4;">Time</label>
+                <input type="time" class="form-control" id="time" style="border-color: #FF69B4; background-color: #FFF0F5;">
+            </div>
+            <div class="form-group">
+                <label for="details" style="color: #FF69B4;">Additional Details</label>
+                <textarea class="form-control" id="details" rows="3" style="border-color: #FF69B4; background-color: #FFF0F5;"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="background-color: #FF1493; border-color: #FF1493;">Book Now</button>
+        </
