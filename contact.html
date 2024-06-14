@@ -3,51 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - OMA Ottawa Makeup Artist</title>
+    <title>Contact - OMA Ottawa Makeup Artist</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Include Bootstrap CSS for styling -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background-color: #F9E6F7;
+            background-color: #ffe6f2;
             color: #333;
             font-family: 'Arial', sans-serif;
         }
-        .navbar {
-            margin-bottom: 30px;
-        }
         .container {
-            max-width: 800px;
-            margin: auto;
+            max-width: 600px;
+            margin-top: 50px;
+        }
+        h1, h2 {
+            font-family: 'Pacifico', cursive;
+            color: #ff66b2;
+        }
+        .btn-primary {
+            background-color: #ff66b2;
+            border-color: #ff66b2;
+        }
+        .btn-primary:hover {
+            background-color: #e60073;
+            border-color: #e60073;
+        }
+        footer {
+            background-color: #ff99cc;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .navbar-brand {
+            color: #ff66b2 !important;
+            font-family: 'Pacifico', cursive;
+        }
+        .form-control, .form-select {
+            border: 2px solid #ff66b2;
+        }
+        .form-control:focus, .form-select:focus {
+            border-color: #e60073;
+            box-shadow: none;
         }
         .contact-info {
-            margin-bottom: 40px;
-        }
-        .contact-info h2 {
-            color: #E75480;
-        }
-        .contact-form {
             background-color: #fff;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        .contact-form h2 {
-            color: #E75480;
             margin-bottom: 20px;
         }
-        .footer {
-            margin-top: 50px;
+        .contact-info p {
+            margin: 0;
+        }
+        .contact-info a {
+            color: #ff66b2;
+        }
+        .form-section {
+            background-color: #fff;
             padding: 20px;
-            background-color: #E75480;
-            color: #fff;
-            text-align: center;
+            border-radius: 10px;
         }
     </style>
 </head>
 <body>
     <header>
-        <!-- Navigation Bar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">OMA Ottawa Makeup Artist</a>
@@ -74,49 +95,47 @@
         </nav>
     </header>
 
-    <main class="container">
+    <div class="container">
         <h1 class="text-center">Contact Us</h1>
-
-        <section class="contact-info text-center">
+        <div class="contact-info">
             <h2>Our Information</h2>
             <p><strong>Phone:</strong> (613) 123-4567</p>
             <p><strong>Email:</strong> <a href="mailto:OttawaMakeupArtist@Business.com">OttawaMakeupArtist@Business.com</a></p>
             <p><strong>Social:</strong> @OttawaMakeupArtist</p>
-            <div class="social-links">
-                <a href="#"><img src="facebook_icon.png" alt="Facebook" width="30"></a>
-                <a href="#"><img src="twitter_icon.png" alt="Twitter" width="30"></a>
-                <a href="#"><img src="instagram_icon.png" alt="Instagram" width="30"></a>
-            </div>
+            <p>
+                <a href="https://facebook.com" target="_blank">Facebook</a> | 
+                <a href="https://twitter.com" target="_blank">Twitter</a> | 
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+            </p>
             <p><strong>Location:</strong> Tanger Outlet Mall, Kanata, Ottawa ON</p>
             <p><strong>Hours:</strong> Monday-Friday 8:00am-8:00pm - Closed Weekends</p>
             <p>Have any questions or concerns? Feel free to fill out the form below!</p>
-        </section>
+        </div>
 
-        <section class="contact-form">
-            <h2 class="text-center">Send Us a Message</h2>
+        <div class="form-section">
+            <h2>Send Us a Message</h2>
             <form>
                 <div class="form-group">
                     <label for="name">Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
                 </div>
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
                 </div>
                 <div class="form-group">
                     <label for="message">Message</label>
-                    <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
+                    <textarea class="form-control" id="message" rows="3" placeholder="Enter your message" required></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary btn-block">Submit</button>
             </form>
-        </section>
-    </main>
+        </div>
+    </div>
 
-    <footer class="footer">
+    <footer>
         <p>Contact us at [email] | © 2024 SEG3125 Project 1</p>
     </footer>
 
-    <!-- Include Bootstrap JS for interactivity -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
