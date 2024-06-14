@@ -1,43 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Booking Confirmation - OMA Ottawa Makeup Artist</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <style>
-        body {
-            background-color: #ffe6f2;
-            color: #333;
-            font-family: 'Arial', sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        h1 {
-            font-family: 'Pacifico', cursive;
-            color: #ff66b2;
-            font-size: 48px;
-        }
-        p {
-            font-size: 18px;
-            color: #333;
-        }
-        .container {
-            text-align: center;
-            padding: 50px;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>You're Booked, Hun!</h1>
-        <p>Make sure you bring reference photos and come without makeup.</p>
+<form action="thankyou.html" method="POST">
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
     </div>
-</body>
-</html>
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+    </div>
+    <div class="form-group">
+        <label for="date">Date</label>
+        <input type="date" class="form-control" id="date" required>
+    </div>
+    <div class="form-group">
+        <label for="time">Time</label>
+        <input type="time" class="form-control" id="time" required>
+    </div>
+    <div class="form-group">
+        <label for="artist">Choose Your Makeup Artist</label>
+        <select class="form-control" id="artist">
+            <option>Select an artist</option>
+            <option>Britney - Expert in wedding and event makeup</option>
+            <option>Sabrina - Specializes in editorial and high-fashion looks</option>
+            <option>Sophia - Known for natural and meticulous styling</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="service">Choose Your Makeup Service</label>
+        <select class="form-control" id="service">
+            <option>Select a service</option>
+            <option>Natural Makeup - $50</option>
+            <option>Prom Makeup - $80</option>
+            <option>Bridal Makeup - $100</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary" style="background-color: #FF1493; border:none;">Book Now</button>
+</form>
