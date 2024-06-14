@@ -38,26 +38,26 @@
 
     <div class="container" style="background-color: #FFF0F5; border-radius: 10px; margin: 40px auto; padding: 20px; width: 80%; max-width: 500px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);">
         <h1 style="text-align: center; color: #FF69B4; font-family: 'Pacifico', cursive;">Book Your Appointment</h1>
-        <form>
+        <form action="thankyou.html" method="GET">
             <div class="form-group">
                 <label for="name">Name</label>
-                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
             </div>
             <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
             </div>
             <div class="form-group">
                 <label for="date">Date</label>
-                <input type="date" class="form-control" id="date" required>
+                <input type="date" class="form-control" id="date" name="date" required>
             </div>
             <div class="form-group">
                 <label for="time">Time</label>
-                <input type="time" class="form-control" id="time" required>
+                <input type="time" class="form-control" id="time" name="time" required>
             </div>
             <div class="form-group">
                 <label for="artist">Choose Your Makeup Artist</label>
-                <select class="form-control" id="artist">
+                <select class="form-control" id="artist" name="artist">
                     <option>Select an artist</option>
                     <option>Britney - Expert in wedding and event makeup</option>
                     <option>Sabrina - Specializes in editorial and high-fashion looks</option>
@@ -66,7 +66,7 @@
             </div>
             <div class="form-group">
                 <label for="service">Choose Your Makeup Service</label>
-                <select class="form-control" id="service">
+                <select class="form-control" id="service" name="service">
                     <option>Select a service</option>
                     <option>Natural Makeup - $50</option>
                     <option>Prom Makeup - $80</option>
