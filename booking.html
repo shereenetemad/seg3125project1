@@ -6,10 +6,53 @@
     <title>Book Appointment - OMA Ottawa Makeup Artist</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #ffe6f2;
+            color: #333;
+            font-family: 'Arial', sans-serif;
+        }
+        .container {
+            max-width: 600px;
+            margin-top: 50px;
+        }
+        h1 {
+            font-family: 'Pacifico', cursive;
+            color: #ff66b2;
+        }
+        .btn-primary {
+            background-color: #ff66b2;
+            border-color: #ff66b2;
+        }
+        .btn-primary:hover {
+            background-color: #e60073;
+            border-color: #e60073;
+        }
+        footer {
+            background-color: #ff99cc;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .navbar-brand {
+            color: #ff66b2 !important;
+            font-family: 'Pacifico', cursive;
+        }
+        .form-control, .form-select {
+            border: 2px solid #ff66b2;
+        }
+        .form-control:focus, .form-select:focus {
+            border-color: #e60073;
+            box-shadow: none;
+        }
+    </style>
     <script>
         function submitForm(event) {
             event.preventDefault();
-            window.location.href = "thankyou.html";
+            window.location.href = "confirmation.html";
         }
     </script>
 </head>
@@ -41,12 +84,12 @@
         </nav>
     </header>
 
-    <div class="container mt-5">
-        <h1 class="text-center text-pink">Book Your Appointment</h1>
+    <div class="container">
+        <h1 class="text-center">Book Your Appointment</h1>
         <form onsubmit="submitForm(event)">
             <div class="form-group">
                 <label for="artist">Choose Your Makeup Artist</label>
-                <select class="form-control" id="artist" required>
+                <select class="form-control form-select" id="artist" required>
                     <option value="" disabled selected>Select an artist</option>
                     <option>Britney</option>
                     <option>Sabrina</option>
@@ -55,7 +98,7 @@
             </div>
             <div class="form-group">
                 <label for="service">Choose Your Makeup Service</label>
-                <select class="form-control" id="service" required>
+                <select class="form-control form-select" id="service" required>
                     <option value="" disabled selected>Select a service</option>
                     <option>Natural Makeup - $50</option>
                     <option>Prom Makeup - $80</option>
@@ -78,7 +121,7 @@
         </form>
     </div>
 
-    <footer class="footer">
+    <footer>
         <p>Contact us at [email] | © 2024 SEG3125 Project 1</p>
     </footer>
 
