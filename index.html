@@ -3,30 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - OMA Ottawa Makeup Artist</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Book a Beauty Tutor</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: #ffe6f2;
+            background-color: #f5f5dc;
             color: #333;
-            font-family: 'Arial', sans-serif;
+            font-family: 'Poppins', sans-serif;
         }
         h1, h2 {
             font-family: 'Pacifico', cursive;
-            color: #ff66b2;
+            color: #ffb6c1;
         }
         .btn-primary {
-            background-color: #ff66b2;
-            border-color: #ff66b2;
+            background-color: #ffb6c1;
+            border-color: #ffb6c1;
         }
         .btn-primary:hover {
-            background-color: #e60073;
-            border-color: #e60073;
+            background-color: #ff69b4;
+            border-color: #ff69b4;
         }
         .navbar-brand {
-            color: #ff66b2 !important;
+            color: #ffb6c1 !important;
             font-family: 'Pacifico', cursive;
         }
         .container {
@@ -37,29 +36,40 @@
             font-size: 18px;
             color: #333;
         }
+        .option-card {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+        .option-card:hover {
+            background-color: #ffe4e1;
+        }
     </style>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">OMA Ottawa Makeup Artist</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="#">Beauty Tutor Booking</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" href="index.html">Home</a>
+                            <a class="nav-link active" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="services.html">Services</a>
+                            <a class="nav-link" href="#services">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="booking.html">Book Appointment</a>
+                            <a class="nav-link" href="/booking">Book Now</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -68,11 +78,32 @@
     </header>
 
     <div class="container">
-        <h1>Welcome to OMA Ottawa Makeup Artist</h1>
-        <p>Your beauty is our priority. Explore our services and book an appointment today!</p>
-        <a href="booking.html" class="btn btn-primary">Book Now</a>
-        <h2>Our Makeup Services</h2>
-        <p>We specialize in Bridal, Prom, Natural, and more makeup options. We use high-end makeup brands like La Mer, MAC, Too Faced, Tom Ford, and Dior.</p>
+        <h1>Welcome to Beauty Tutor Booking</h1>
+        <p>Find the perfect beauty tutor for personalized help with hair, makeup, or fragrance that suits you best.</p>
+
+        <div class="row" id="services">
+            <div class="col-md-4">
+                <div class="option-card">
+                    <h2>Hair</h2>
+                    <p>Get expert advice on hair care, styling, and finding the right products for your hair type.</p>
+                    <a href="/booking" class="btn btn-primary">Book Now</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="option-card">
+                    <h2>Makeup</h2>
+                    <p>Learn makeup techniques, product recommendations, and tips tailored to your skin type and preferences.</p>
+                    <a href="/booking" class="btn btn-primary">Book Now</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="option-card">
+                    <h2>Fragrance</h2>
+                    <p>Discover the perfect fragrances that complement your style and personality.</p>
+                    <a href="/booking" class="btn btn-primary">Book Now</a>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
